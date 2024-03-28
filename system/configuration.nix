@@ -104,34 +104,35 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    nixpkgs-fmt
+    #* dotfiles
+    home-manager
+
+    #* notification
+    inotify-tools
+
+    #* Development
+    git
     vim
+    gh
+    kitty
+
+    #* sound and video
     pamixer
     brightnessctl
+    playerctl
+
+    #* browser
     firefox
-    kitty
-    neofetch
-    git
-    gh
-    waybar
-    vscode
-    gnomeExtensions.xremap
-    spotify
-    spotdl
-    syncthing
+
+    #* file manager
     yazi
-    discord
-    zoxide
-    home-manager
-    inotify-tools
+
+    #* fonts
     font-awesome
-    rofi-wayland
+
+    #* bluetooth
     bluez-tools
     blueberry
-    cava
-    playerctl
-    stremio
-    discord
   ];
 
   fonts.packages = with pkgs; [

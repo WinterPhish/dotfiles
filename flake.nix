@@ -27,7 +27,7 @@
       homeConfigurations.mmed = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
-          ./home.nix
+          ./user/home.nix
         ];
       };
     };

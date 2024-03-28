@@ -6,14 +6,20 @@
 
   home.stateVersion = "23.11"; 
 
-  home.packages = [
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
 
-    # # You can also create simple shell scripts directly inside your
-    # # configuration. For example, this adds a command 'my-hello' to your
-    # # environment:
-    (pkgs.writeShellScriptBin "my-hello" ''
-      echo "Welcome back, ${config.home.username}!"
-    '')
+  imports = [
+    ./cli.nix
+    ./apps.nix
+    ./music.nix
+    ./hyprland.nix
+    ./music.nix
+    ./vanity.nix
+    ./vscode.nix
+  ];
+
+  home.packages = with pkgs; [
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
