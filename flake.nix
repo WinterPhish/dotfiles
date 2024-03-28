@@ -21,7 +21,7 @@
         };
         inherit system;
         modules = [
-          ./configuration.nix
+          ./system/configuration.nix
         ];
       };
       homeConfigurations.mmed = home-manager.lib.homeManagerConfiguration {
