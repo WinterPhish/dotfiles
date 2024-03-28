@@ -2,13 +2,25 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
-    [ 
+    [
       ./hardware-configuration.nix
+      inputs.xremap-flake.nixosModules.default
     ];
+
+  # xremap configuration
+  /* Enable Hypr feature support */
+  services.xremap.withHypr = true;
+  # Modmap for single key rebinds
+  services.xremap.config.modmap = [
+    {
+      name = "Global";
+      remap = { "CapsLock" = "Esc"; }; # globally remap CapsLock to Esc
+    }
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -48,7 +60,7 @@
     isNormalUser = true;
     description = "mmed";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    packages = with pkgs; [ ];
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -65,13 +77,13 @@
 
   # enable pipewire
   sound.enable = true;
-  	security.rtkit.enable = true;
- 	services.pipewire = {
-   enable = true;
-	  alsa.enable = true;
-	  alsa.support32Bit = true;
-	  pulse.enable = true;
-	  jack.enable = true;
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
   };
 
   # enable waybar 
@@ -81,7 +93,7 @@
       mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
     });
   };
-    nixpkgs.overlays = [
+  nixpkgs.overlays = [
     (self: super: {
       waybar = super.waybar.overrideAttrs (oldAttrs: {
         mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
@@ -92,34 +104,34 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  nixpkgs-fmt
-  vim 
-  pamixer
-  brightnessctl
-  firefox
-  kitty
-  neofetch
-  git
-  gh
-  waybar
-  vscode
-  gnomeExtensions.xremap
-  spotify
-  spotdl
-  syncthing
-  yazi
-  discord
-  zoxide
-  home-manager
-  inotify-tools
-  font-awesome
-  rofi-wayland
-  bluez-tools
-  blueberry
-  cava
-  playerctl
-  stremio
-  discord
+    nixpkgs-fmt
+    vim
+    pamixer
+    brightnessctl
+    firefox
+    kitty
+    neofetch
+    git
+    gh
+    waybar
+    vscode
+    gnomeExtensions.xremap
+    spotify
+    spotdl
+    syncthing
+    yazi
+    discord
+    zoxide
+    home-manager
+    inotify-tools
+    font-awesome
+    rofi-wayland
+    bluez-tools
+    blueberry
+    cava
+    playerctl
+    stremio
+    discord
   ];
 
   fonts.packages = with pkgs; [
