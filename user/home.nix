@@ -26,7 +26,7 @@
   # plain files is through 'home.file'.
   home.file = {
     ".config/kitty/kitty.conf".source = config.lib.file.mkOutOfStoreSymlink ./../config_files/kitty.conf;
-    # ".zshrc".source = config.lib.file.mkOutOfStoreSymlink ./../config_files/zshrc;
+    ".icons/default".source = "${pkgs.vanilla-dmz}/share/icons/Vanilla-DMZ";
   };
 
   home.sessionVariables = {
