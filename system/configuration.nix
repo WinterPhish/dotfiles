@@ -59,6 +59,8 @@
   users.users.mmed = {
     isNormalUser = true;
     description = "mmed";
+    # default shell
+    shell = pkgs.nushell;
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [ ];
   };
@@ -85,21 +87,6 @@
     pulse.enable = true;
     jack.enable = true;
   };
-
-  # enable waybar 
-  programs.waybar = {
-    enable = true;
-    package = pkgs.waybar.overrideAttrs (oldAttrs: {
-      mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
-    });
-  };
-  nixpkgs.overlays = [
-    (self: super: {
-      waybar = super.waybar.overrideAttrs (oldAttrs: {
-        mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
-      });
-    })
-  ];
 
   environment.systemPackages = with pkgs; [
     #* dotfiles
