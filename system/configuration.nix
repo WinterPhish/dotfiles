@@ -60,10 +60,13 @@
     isNormalUser = true;
     description = "mmed";
     # default shell
-    shell = pkgs.nushell;
+    shell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [ ];
   };
+
+  programs.zsh.enable = true; 
+  programs.zsh.autosuggestions.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -121,6 +124,10 @@
 
     #* xdg configuration
     xdg-utils
+
+    #* Shells
+    nushell
+    zsh
   ];
 
   fonts.packages = with pkgs; [

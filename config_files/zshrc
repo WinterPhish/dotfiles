@@ -1,0 +1,31 @@
+eval "$(starship init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+
+function update {
+  current_dir=$(pwd)
+  cd ~/.dotfiles
+  nix flake update
+  sudo nixos-rebuild switch --flake .
+  home-manager switch --flake .
+  echo "Update complete"
+  cd $current_dir
+}
+
+function reload {
+  current_dir=$(pwd)
+  cd ~/.dotfiles
+  home-manager switch --flake .
+  echo "Reload complete"
+  cd $current_dir
+}
+
+function full_reload {
+  current_dir=$(pwd)
+  cd ~/.dotfiles
+  sudo nixos-rebuild switch --flake .
+  home-manager switch --flake .
+  echo "Reload complete"
+  cd $current_dir
+}
+
+echo "Welcome Mmed!!"

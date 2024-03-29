@@ -479,11 +479,11 @@
         "xremap": "xremap"
       },
       "locked": {
-        "lastModified": 1711575427,
-        "narHash": "sha256-IESxKmyPeu1cDaNKfW4JlSPeLki5pSLYaAkBApQTEcg=",
+        "lastModified": 1711648974,
+        "narHash": "sha256-IvG8EjLOMbETeF7J4vmur2LcwNMPuv7ui1NpRwLwB2U=",
         "owner": "xremap",
         "repo": "nix-flake",
-        "rev": "3f0634cc2a30a38ac471483fa7a9098292a4b196",
+        "rev": "cbed2f9e9a1d5f3dcd42ee71b756fce9ececedc6",
         "type": "github"
       },
       "original": {
