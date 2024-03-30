@@ -26,7 +26,13 @@
   # plain files is through 'home.file'.
   home.file = {
     ".config/kitty/kitty.conf".source = config.lib.file.mkOutOfStoreSymlink ./../config_files/kitty.conf;
-    ".icons/default".source = "${pkgs.vanilla-dmz}/share/icons/Vanilla-DMZ";
+  };
+
+  home.pointerCursor = {
+    name = "phinger-cursors-light";
+    package = pkgs.phinger-cursors;
+    size = 25;
+    gtk.enable = true;
   };
 
   home.sessionVariables = {
@@ -38,7 +44,7 @@
   programs.git = {
     enable = true;
     userName = "mmed";
-    userEmail = "noreply@gmail.com";
+    userEmail = "mmed.benhadjnasr@gmail.com";
   };
 
   programs.home-manager.enable = true;

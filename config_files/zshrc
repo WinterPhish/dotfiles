@@ -1,12 +1,9 @@
-eval "$(starship init zsh)"
-eval "$(zoxide init --cmd cd zsh)"
-
 function update {
   current_dir=$(pwd)
   cd ~/.dotfiles
   nix flake update
-  sudo nixos-rebuild switch --flake .
-  home-manager switch --flake .
+  sudo nixos-rebuild switch --flake . -b ~/junkyard
+  home-manager switch --flake . -b .
   echo "Update complete"
   cd $current_dir
 }
@@ -14,7 +11,7 @@ function update {
 function reload {
   current_dir=$(pwd)
   cd ~/.dotfiles
-  home-manager switch --flake .
+  home-manager switch --flake . -b ~/junkyard
   echo "Reload complete"
   cd $current_dir
 }
@@ -22,10 +19,16 @@ function reload {
 function full_reload {
   current_dir=$(pwd)
   cd ~/.dotfiles
-  sudo nixos-rebuild switch --flake .
-  home-manager switch --flake .
+  sudo nixos-rebuild switch --flake . -b ~/junkyard
+  home-manager switch --flake . -b ~/junkyard
   echo "Reload complete"
   cd $current_dir
 }
 
-echo "Welcome Mmed!!"
+echo "
+░░░    ░░░ ░░░    ░░░ ░░░░░░░ ░░░░░░  
+▒▒▒▒  ▒▒▒▒ ▒▒▒▒  ▒▒▒▒ ▒▒      ▒▒   ▒▒ 
+▒▒ ▒▒▒▒ ▒▒ ▒▒ ▒▒▒▒ ▒▒ ▒▒▒▒▒   ▒▒   ▒▒ 
+▓▓  ▓▓  ▓▓ ▓▓  ▓▓  ▓▓ ▓▓      ▓▓   ▓▓ 
+██      ██ ██      ██ ███████ ██████  
+"
