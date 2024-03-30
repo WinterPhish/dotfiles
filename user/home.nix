@@ -31,7 +31,7 @@
   home.pointerCursor = {
     name = "phinger-cursors-light";
     package = pkgs.phinger-cursors;
-    size = 25;
+    size = 28;
     gtk.enable = true;
   };
 
