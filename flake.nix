@@ -6,10 +6,10 @@
     home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     xremap-flake.url = "github:xremap/nix-flake";
-    stylix.url = "github:danth/stylix";
+    #stylix.url = "github:danth/stylix";
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
@@ -28,7 +28,6 @@
       homeConfigurations.mmed = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
-          stylix.homeManagerModules.stylix
           ./user/home.nix
         ];
       };
