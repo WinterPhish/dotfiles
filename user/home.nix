@@ -1,5 +1,9 @@
 { config, pkgs, ... }:
 
+let
+  dotdir = config.home.homeDirectory + "/dotfiles";
+  static_files = config.home.homeDirectory + "/dotfiles/config_files/static";
+in
 {
   home.username = "mmed";
   home.homeDirectory = "/home/mmed";
@@ -25,7 +29,9 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
-    ".config/kitty/kitty.conf".source = config.lib.file.mkOutOfStoreSymlink ./../config_files/kitty.conf;
+    ".config/kitty/kitty.conf".source = config.lib.file.mkOutOfStoreSymlink static_files + "/kitty.conf";
+    ".config/hypr/kybindings.conf".source = config.lib.file.mkOutOfStoreSymlink static_files + "/kybindings.conf";
+    ".config/starship.toml".source = config.lib.file.mkOutOfStoreSymlink static_files + "/starship.toml";
   };
 
   home.pointerCursor = {

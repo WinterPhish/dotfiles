@@ -3,7 +3,6 @@ function update {
   cd ~/dotfiles
   nix flake update
   sudo nixos-rebuild switch --flake . -b . -L
-  home-manager switch --flake . -b . -L
   echo "Update complete"
   cd $current_dir
 }
@@ -20,7 +19,6 @@ function full_reload {
   current_dir=$(pwd)
   cd ~/dotfiles
   sudo nixos-rebuild switch --flake . -b . -L
-  home-manager switch --flake . -b . -L
   echo "Reload complete"
   cd $current_dir
 }
