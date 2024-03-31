@@ -23,7 +23,7 @@ function full_reload {
   )
   gen=$(nixos-rebuild list-generations | grep current)
   git commit -am "$gen"
-  echo "Reload complete"
+  echo "Full reload complete"
   cd $current_dir
 }
 
