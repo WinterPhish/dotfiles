@@ -6,7 +6,7 @@ format = " took [$duration]($style)"
 
 [git_status]
 conflicted = "⚔️ "
-ahead = "🏎️ 💨X${count}"
+ahead = " 🏎️ 💨 X${count}"
 behind = "🐢X${count}"
 diverged = "🔱 🏎️ 💨X${ahead_count} 🐢X${behind_count}"
 untracked = "🛤️"
