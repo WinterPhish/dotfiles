@@ -21,6 +21,7 @@ in
     ./music.nix
     ./vanity.nix
     ./vscode.nix
+    ./temp/PFE.nix
   ];
 
   home.packages = with pkgs; [

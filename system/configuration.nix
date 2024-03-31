@@ -8,6 +8,7 @@
   imports =
     [
       ./hardware-configuration.nix
+      ./hyprland.nix  
       inputs.xremap-flake.nixosModules.default
     ];
 
@@ -65,7 +66,7 @@
     packages = with pkgs; [ ];
   };
 
-  programs.zsh.enable = true; 
+  programs.zsh.enable = true;
   programs.zsh.autosuggestions.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -73,23 +74,9 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Set up Hyprland
-  programs.hyprland.enable = true;
-
   # Gtk configuration
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-
-  # enable pipewire
-  sound.enable = true;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    jack.enable = true;
-  };
 
   environment.systemPackages = with pkgs; [
     #* dotfiles
@@ -103,6 +90,7 @@
     vim
     gh
     kitty
+    unzip # self-explanatory 
 
     #* sound and video
     pamixer
