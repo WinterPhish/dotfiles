@@ -9,6 +9,8 @@
     [
       ./hardware-configuration.nix
       ./hyprland.nix
+      ./virtual.nix
+      # ./virt.nix
       inputs.xremap-flake.nixosModules.default
     ];
 

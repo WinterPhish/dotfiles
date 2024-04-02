@@ -18,11 +18,7 @@ function reload {
 function full_reload {
   current_dir=$(pwd)
   cd ~/dotfiles
-  sudo nixos-rebuild switch --flake . &>nixos-switch.log || (
-    cat nixos-switch.log | grep --color error && false
-  )
-  gen=$(nixos-rebuild list-generations | grep current)
-  git commit -am "$gen"
+  sudo nixos-rebuild switch --flake .
   echo "Full reload complete"
   cd $current_dir
 }

@@ -4,7 +4,7 @@
     discord    
     stremio
     rofimoji # emoji picker
-    wl-clipboard # wayland clipboard manager
     wtype # wayland typing indicator
+    btop # better htop
   ];
 }
