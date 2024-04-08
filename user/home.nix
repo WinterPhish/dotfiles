@@ -33,6 +33,7 @@ in
     ".config/kitty/kitty.conf".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/kitty.conf";
     ".config/hypr/keybindings.conf".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/keybindings.conf";
     ".config/starship.toml".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/starship.toml";
+    ".config/hypr/hyprland.conf".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/hyprland.conf";
   };
 
   home.pointerCursor = {

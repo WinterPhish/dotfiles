@@ -10,6 +10,8 @@ in
     swappy # image viewer
     grimblast # Screenshot tool
     wl-clipboard # Clipboard manager
+    pavucontrol # Pulseaudio volume control
+    
 
     # Screenshot tools
     (pkgs.writeShellScriptBin "screenshot" ''
