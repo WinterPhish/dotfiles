@@ -11,14 +11,32 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let
+      SystemSettings = {
+        system = "x86_64-linux";
+        hostname = "mmedPC";
+        timezone = "Africa/Tunis";
+        locale = "en_US.UTF-8";
+      };
+      UserSettings = rec {
+        username = "mmed";
+        email = "mmed.benhadjnasr@gmail.com";
+        homeDir = "/home/" + UserSettings.username;
+        dotfilesDir = UserSettings.homeDir + "/dotfiles";
+        wm = "hyprland";
+        browser = "firefox";
+        terminal = "kitty";
+        tty_editor = "vim";
+        editor = "code --disable-gpu";
+      };
       lib = nixpkgs.lib;
-      system = "x86_64-linux";
+      system = SystemSettings.system;
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
       nixosConfigurations.mmedPC = lib.nixosSystem {
         specialArgs = {
           inherit inputs;
+          inherit SystemSettings;
         };
         inherit system;
         modules = [
@@ -27,6 +45,9 @@
       };
       homeConfigurations.mmed = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
+        extraSpecialArgs = {
+          inherit UserSettings;
+        };
         modules = [
           ./user/home.nix
         ];

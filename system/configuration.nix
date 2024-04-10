@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, SystemSettings, ... }:
 
 {
   imports =
@@ -14,10 +14,8 @@
       inputs.xremap-flake.nixosModules.default
     ];
 
-  # xremap configuration
-  /* Enable Hypr feature support */
+  #* xremap configuration
   services.xremap.withHypr = true;
-  # Modmap for single key rebinds
   services.xremap.config.modmap = [
     {
       name = "Global";
@@ -31,25 +29,25 @@
 
 
   # Enable networking
-  networking.hostName = "mmedPC"; # Define your hostname.
+  networking.hostName = SystemSettings.hostname;
   networking.networkmanager.enable = true;
 
   # Set your time zone.
-  time.timeZone = "Africa/Tunis";
+  time.timeZone = SystemSettings.timezone;
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
+  i18n.defaultLocale = SystemSettings.locale;
 
   i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
-    LC_TIME = "en_US.UTF-8";
+    LC_ADDRESS = SystemSettings.locale;
+    LC_IDENTIFICATION = SystemSettings.locale;
+    LC_MEASUREMENT = SystemSettings.locale;
+    LC_MONETARY = SystemSettings.locale;
+    LC_NAME = SystemSettings.locale;
+    LC_NUMERIC = SystemSettings.locale;
+    LC_PAPER = SystemSettings.locale;
+    LC_TELEPHONE = SystemSettings.locale;
+    LC_TIME = SystemSettings.locale;
   };
 
   # Configure keymap in X11
@@ -58,16 +56,16 @@
     xkbVariant = "";
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+  # users
   users.users.mmed = {
     isNormalUser = true;
     description = "mmed";
     # default shell
-    shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [ ];
+    extraGroups = [ "networkmanager" "wheel" "mmed"];
   };
 
+  # Shell
+  users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
   programs.zsh.autosuggestions.enable = true;
 
@@ -126,19 +124,19 @@
     meslo-lgs-nf
   ];
 
-  # enable auto-updates
-  system.autoUpgrade = {
-    enable = true;
-    flake = inputs.self.outPath;
-    flags = [
-      "--update-input"
-      "nixpkgs"
-      "-L"
-    ];
-    dates = "09:00";
-    randomizedDelaySec = "45min";
-  };
+  # # enable auto-updates
+  # system.autoUpgrade = {
+  #   enable = true;
+  #   flake = inputs.self.outPath;
+  #   flags = [
+  #     "--update-input"
+  #     "nixpkgs"
+  #     "-L"
+  #   ];
+  #   dates = "09:00";
+  #   randomizedDelaySec = "45min";
+  # };
 
-  system.stateVersion = "23.11"; # Did you read the comment?
+  system.stateVersion = "23.11"; 
 
 }

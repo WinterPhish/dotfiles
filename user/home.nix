@@ -1,12 +1,10 @@
-{ config, pkgs, ... }:
-
+{ config, pkgs, UserSettings, ... }:
 let
-  dotdir = "/home/mmed/dotfiles";
-  static_files = "${dotdir}/config_files/static";
+  static_files = UserSettings.dotfilesDir+"/config_files/static";
 in
 {
-  home.username = "mmed";
-  home.homeDirectory = "/home/mmed";
+  home.username = UserSettings.username;
+  home.homeDirectory = UserSettings.homeDir;
 
   home.stateVersion = "23.11";
 
@@ -22,9 +20,6 @@ in
     ./vanity.nix
     ./vscode.nix
     ./temp/PFE.nix
-  ];
-
-  home.packages = with pkgs; [
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -44,15 +39,15 @@ in
   };
 
   home.sessionVariables = {
-    EDITOR = "vim";
-    BROWSER = "firefox";
+    EDITOR = UserSettings.tty_editor;
+    BROWSER = UserSettings.browser;
   };
 
   # GIT configuration
   programs.git = {
     enable = true;
-    userName = "mmed";
-    userEmail = "mmed.benhadjnasr@gmail.com";
+    userName = UserSettings.username;
+    userEmail = UserSettings.email;
   };
 
   programs.home-manager.enable = true;
