@@ -3,8 +3,9 @@
     "position": "top",
     "margin-left": 10,
     "margin-right": 10,
-    "margin-top": 10,
+    "margin-top": 3,
     "spacing": 1,
+    "margin-bottom": -15,
 
     "modules-left": ["custom/power", "hyprland/workspaces"],
     "modules-center": ["clock"],
@@ -13,7 +14,7 @@
     "hyprland/workspaces": {
         "on-click": "activate",
         "persistent-workspaces": {
-            "*": 5,
+            "*": 4
          },
         "format": "{icon}",
         "format-icons": {
@@ -60,13 +61,14 @@
         "format": "󰋊 {percentage_used}%",
     },
     "network": {
-        "format-wifi": " :{ipaddr}",
+        "format-wifi": "  {ipaddr}",
         "format-ethernet": " {ipaddr}/{cidr}",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "kitty nmtui"
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",

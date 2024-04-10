@@ -8,12 +8,6 @@
     wl-clipboard # Clipboard manager
     pavucontrol # Pulseaudio volume control
 
-    # start waybar
-    (pkgs.writeShellScriptBin "waybar-init" ''
-      cd ${UserSettings.scriptsDir}
-      ./launch-waybar.sh
-    '')
-
     # Screenshot script
     (pkgs.writeShellScriptBin "screenshot" ''
       # Restores the shader after screenhot has been taken
