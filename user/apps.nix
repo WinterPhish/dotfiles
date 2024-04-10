@@ -9,5 +9,6 @@
     pywal
     swww
     zathura
+    qbittorrent
   ];
 }

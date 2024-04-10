@@ -1,8 +1,4 @@
-{ pkgs, ... }:
-let
-  screenshots_dir = "/home/mmed/Screenshots";
-  config_dir = "/home/mmed/.config";
-in
+{ pkgs, UserSettings, ... }:
 {
   home.packages = with pkgs; [
     hyprshade # Shader for screenshot
@@ -11,12 +7,15 @@ in
     grimblast # Screenshot tool
     wl-clipboard # Clipboard manager
     pavucontrol # Pulseaudio volume control
-    
 
-    # Screenshot tools
+    # start waybar
+    (pkgs.writeShellScriptBin "waybar-init" ''
+      cd ${UserSettings.scriptsDir}
+      ./launch-waybar.sh
+    '')
+
+    # Screenshot script
     (pkgs.writeShellScriptBin "screenshot" ''
-      #!/usr/bin/env sh
-
       # Restores the shader after screenhot has been taken
       restore_shader() {
       	if [ -n "$shader" ]; then
@@ -37,8 +36,8 @@ in
       	XDG_PICTURES_DIR="$HOME/Pictures"
       fi
 
-      swpy_dir="${config_dir}/swappy"
-      save_dir="${screenshots_dir}"
+      swpy_dir="${UserSettings.configDir}/swappy"
+      save_dir="${UserSettings.screenshotDir}"
       save_file=$(date +'%y%m%d_%Hh%Mm%Ss_screenshot.png')
       temp_screenshot="/tmp/screenshot.png"
 

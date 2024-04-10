@@ -26,9 +26,9 @@ in
   # plain files is through 'home.file'.
   home.file = {
     ".config/kitty/kitty.conf".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/kitty.conf";
-    ".config/hypr/keybindings.conf".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/keybindings.conf";
+    ".config/hypr".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/hypr";
     ".config/starship.toml".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/starship.toml";
-    ".config/hypr/hyprland.conf".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/hyprland.conf";
+    ".config/waybar".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/waybar";
   };
 
   home.pointerCursor = {

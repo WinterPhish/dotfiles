@@ -1,5 +1,3 @@
-#!/bin/bash
-
 CONFIG_FILES="$HOME/.config/waybar/noback/config $HOME/.config/waybar/noback/style.css $HOME/.config/waybar/desktopclock/config $HOME/.config/waybar/desktopclock/style.css"
 
 trap "killall waybar" EXIT

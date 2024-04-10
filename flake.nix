@@ -22,6 +22,9 @@
         email = "mmed.benhadjnasr@gmail.com";
         homeDir = "/home/" + UserSettings.username;
         dotfilesDir = UserSettings.homeDir + "/dotfiles";
+        configDir = UserSettings.homeDir + "/.config";
+        screenshotDir = UserSettings.homeDir + "/Screenshots";
+        scriptsDir = UserSettings.dotfilesDir + "/config_files/scripts";
         wm = "hyprland";
         browser = "firefox";
         terminal = "kitty";
