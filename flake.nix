@@ -7,7 +7,6 @@
     home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     xremap-flake.url = "github:xremap/nix-flake";
-    #stylix.url = "github:danth/stylix";
   };
 
   outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs:

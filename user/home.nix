@@ -29,7 +29,7 @@ in
     ".config/hypr".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/hypr";
     ".config/starship.toml".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/starship.toml";
     ".config/waybar".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/waybar";
-    ".config/scripts".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/scripts";
+    ".config/scripts".source = config.lib.file.mkOutOfStoreSymlink "${UserSettings.dotfilesDir}/config_files/scripts";
     ".config/yazi/yazi.toml".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/yazi.toml";
   };
 
