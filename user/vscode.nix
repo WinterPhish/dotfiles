@@ -1,8 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-unstable, ... }:
 {
-  home.packages = with pkgs; [
-    nixpkgs-fmt
-    vscode
-    texliveFull
+  home.packages = [
+    pkgs.nixpkgs-fmt
+    pkgs-unstable.vscode
+    pkgs.texliveFull
   ];
 }
