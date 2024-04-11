@@ -13,22 +13,19 @@
 
     "hyprland/workspaces": {
         "on-click": "activate",
-        "persistent-workspaces": {
-            "*": 4
-         },
         "format": "{icon}",
         "format-icons": {
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "6": "6",
-            "7": "7",
-            "8": "8",
-            "9": "9",
-            "10": "10"
-         },
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V",
+            "6": "VI",
+            "7": "VII",
+            "8": "VIII",
+            "9": "IX",
+            "10": "X"
+         }
     },
     "tray": {
         "icon-size": 18,
@@ -42,10 +39,10 @@
         "format-alt": "{:%Y-%m-%d}"
     },
    "temperature": {
-        "critical-threshold": 80,
+        "critical-threshold": 70,
         "interval": 2,
         "format": " {temperatureC}°C",
-        "format-icons": ["", "", ""]
+        "format-icons": ["🧊", "", "🔥"]
     },
     "cpu": {
         "interval": 2,
@@ -57,17 +54,16 @@
         "format": "  {}%"
     },
    "disk": {
-        "interval": 15,
-        "format": "󰋊 {percentage_used}%",
+        "interval": 45,
+        "format": "󰋊 {percentage_used}%"
     },
     "network": {
         "format-wifi": "  {ipaddr}",
         "format-ethernet": " {ipaddr}/{cidr}",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format": "still disconnected",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "on-click": "kitty nmtui"
     },
     "pulseaudio": {
@@ -90,11 +86,11 @@
     },
     "custom/power": {
       "format": "{icon}",
-      "format-icons": "󰣇",
+      "format-icons": "Mmed",
       "exec-on-event": "true",
-      "on-click": "wofi --show=drun",
+      "on-click": "wofi --show=drun"
     },
     "custom/sepp": {
         "format": "|"
-    },
+    }
 }
