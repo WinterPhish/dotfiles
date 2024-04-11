@@ -16,7 +16,7 @@
     '')
     (pkgs.writeShellScriptBin "update_music" ''
       current_dir=$(pwd)
-      cd ~/Media/Music
+      cd ~/Music
       spotdl "https://open.spotify.com/playlist/1IFByXt9QiKJvIEZHQ1LmT?si=9955d6a3e7924ce2"
       cd $current_dir
     '')

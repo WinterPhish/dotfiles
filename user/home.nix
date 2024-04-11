@@ -20,6 +20,7 @@ in
     ./vanity.nix
     ./vscode.nix
     ./temp/PFE.nix
+    ./xdg.nix
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

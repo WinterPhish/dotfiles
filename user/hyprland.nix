@@ -31,7 +31,7 @@
       fi
 
       swpy_dir="${UserSettings.configDir}/swappy"
-      save_dir="${UserSettings.screenshotDir}"
+      save_dir="$XDG_PICTURES_DIR/screenshots"
       save_file=$(date +'%y%m%d_%Hh%Mm%Ss_screenshot.png')
       temp_screenshot="/tmp/screenshot.png"
 

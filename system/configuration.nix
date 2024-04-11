@@ -111,9 +111,6 @@
     bluez-tools
     blueberry
 
-    #* xdg configuration
-    xdg-utils
-
     #* Shells
     nushell
     zsh
