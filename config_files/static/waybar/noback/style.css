@@ -1,4 +1,4 @@
-@import "mocha.css";
+@import "desc-colors.css";
 
 * {
   min-height: 0;
@@ -36,18 +36,18 @@ button {
 }
 
 button:hover {
-  background: @base;
+  background: @surface2;
   border-radius: 90px;
 }
 
 #custom-power {
-  color: @blue;
+  color: @bg01;
   font-weight: 600;
   margin-right: 10px;
   padding-left: 15px;
   padding-right: 19px;
   border-radius: 90px;
-  background: @crust
+  background: @magneta;
 }
 
 #workspaces {
@@ -55,7 +55,7 @@ button:hover {
   margin-right: 10px;
   padding: 5px 10px;
   border-radius: 90px;
-  background: @crust
+  background: @bg01;
 }
 
 #workspaces button {
@@ -89,25 +89,25 @@ button:hover {
   margin-right: 10px;
   padding: 6px 15px;
   border-radius: 90px;
-  background: @crust
+  background: @bg01;
 }
 
 #pulseaudio {
-  color: @crust;
+  color: @bg01;
   font-weight: 600;
   margin-right: 10px;
   padding: 6px 15px;
   border-radius: 90px;
-  background: @blue
+  background: @accent1;
 }
 
 #network {
-  color: @crust;
+  color: @bg01;
   font-weight: 600;
   margin-right: 10px;
   padding: 6px 15px;
   border-radius: 90px;
-  background: @green
+  background: @accent2;
 }
 
 #tray {
@@ -115,7 +115,7 @@ button:hover {
   font-weight: 600;
   padding: 6px 15px;
   border-radius: 90px;
-  background: @crust
+  background: @bg01;
 }
 
 #clock {
@@ -124,7 +124,7 @@ button:hover {
   margin-right: 10px;
   padding: 6px 15px;
   border-radius: 90px;
-  background: @crust
+  background: @bg01;
 }
 
 #custom-sepp {

@@ -1,14 +1,16 @@
-{pkgs, ...}:
+{ pkgs, ... }:
 {
   home.packages = with pkgs; [
-    discord    
+    discord
     stremio
     rofimoji # emoji picker
     wtype # wayland typing indicator
     btop # better htop
-    pywal
+    flavours # color scheme switcher
     swww
     zathura
     qbittorrent
+    pywal
+    dolphin # file manager
   ];
 }

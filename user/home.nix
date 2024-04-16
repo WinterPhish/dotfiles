@@ -1,6 +1,6 @@
 { config, pkgs, UserSettings, ... }:
 let
-  static_files = UserSettings.dotfilesDir+"/config_files/static";
+  static_files = UserSettings.dotfilesDir + "/config_files/static";
 in
 {
   home.username = UserSettings.username;
@@ -21,6 +21,7 @@ in
     ./vscode.nix
     ./temp/PFE.nix
     ./xdg.nix
+    ./gtk.nix
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -32,13 +33,7 @@ in
     ".config/waybar".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/waybar";
     ".config/scripts".source = config.lib.file.mkOutOfStoreSymlink "${UserSettings.dotfilesDir}/config_files/scripts";
     ".config/yazi/yazi.toml".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/yazi.toml";
-  };
-
-  home.pointerCursor = {
-    name = "phinger-cursors-light";
-    package = pkgs.phinger-cursors;
-    size = 28;
-    gtk.enable = true;
+    ".config/flavours".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/flavours";
   };
 
   home.sessionVariables = {

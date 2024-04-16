@@ -73,7 +73,6 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  nixpkgs_unstable.config.allowUnfree = true;
 
   # Gtk configuration
   xdg.portal.enable = true;

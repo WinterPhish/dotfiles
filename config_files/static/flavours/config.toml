@@ -1,0 +1,26 @@
+shell = "zsh -c '{}'"
+
+[[items]]
+file = "~/.config/kitty/kitty.conf"
+template = "kitty"
+hook = "kill -SIGUSR1 $(pgrep kitty)"
+
+[[item]]
+file= "~/.config/zathura/zathurarc"
+template = "zathura"
+
+[[item]]
+file = "~/.config/waybar/desktopclock/desc-colors.css"
+template = "mmed"
+rewrite = true
+
+[[item]]
+file = "~/.config/waybar/noback/desc-colors.css"
+template = "mmed"
+rewrite = true
+
+[[item]]
+file = "~/.config/test/build_schemes.json"
+template = "pywal"
+rewrite = true
+hook = "wal --theme ~/.config/test/build_schemes.json -ste"

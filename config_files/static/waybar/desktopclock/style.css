@@ -1,4 +1,4 @@
-@import "mocha.css";
+@import "desc-colors.css";
 
 * {
   min-height: 0;
@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-  color: @text;
+  color: @accent2;
   background: 00;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -22,5 +22,5 @@ window#waybar.empty {
     margin-left: 100px;
     font-weight: 300;
     font-size: 48pt;
-    color: @blue;
+    color: @accent2;
 }
