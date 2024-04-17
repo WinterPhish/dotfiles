@@ -8,6 +8,7 @@ hook = "kill -SIGUSR1 $(pgrep kitty)"
 [[item]]
 file= "~/.config/zathura/zathurarc"
 template = "zathura"
+rewrite = true
 
 [[item]]
 file = "~/.config/waybar/desktopclock/desc-colors.css"
@@ -24,3 +25,14 @@ file = "~/.config/test/build_schemes.json"
 template = "pywal"
 rewrite = true
 hook = "wal --theme ~/.config/test/build_schemes.json -ste"
+
+[[item]]
+file = "~/.vscode/extensions/dracula-theme.theme-dracula-2.24.3/theme/dracula.json"
+template = "vscode"
+subtemplate = "base16"
+rewrite = true
+
+[[item]]
+file = "~/.config/hypr/hyprland.conf"
+template = "hyprland"
+
