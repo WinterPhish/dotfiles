@@ -5,7 +5,6 @@
     stremio
     rofimoji # emoji picker
     dolphin # gui file manager
-    bun
     wtype # wayland typing indicator
     btop # better htop
     flavours # color scheme switcher

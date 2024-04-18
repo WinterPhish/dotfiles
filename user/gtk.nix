@@ -44,9 +44,4 @@
       gtk-cursor-theme-name = "Catppuccin-Mocha-Green-Cursors";
     };
   };
-
-  qt = {
-    enable = true;
-    platformTheme = "gtk";
-  };
 }
