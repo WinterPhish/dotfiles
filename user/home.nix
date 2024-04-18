@@ -1,6 +1,6 @@
 { config, pkgs, UserSettings, ... }:
 let
-  static_files = UserSettings.dotfilesDir + "/config_files/static";
+  static_files = UserSettings.dotfilesDir + "/config_files";
 in
 {
   home.username = UserSettings.username;
@@ -31,7 +31,7 @@ in
     ".config/hypr".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/hypr";
     ".config/starship.toml".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/starship.toml";
     ".config/waybar".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/waybar";
-    ".config/scripts".source = config.lib.file.mkOutOfStoreSymlink "${UserSettings.dotfilesDir}/config_files/scripts";
+    ".config/scripts".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/scripts";
     ".config/yazi/yazi.toml".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/yazi.toml";
     ".config/flavours".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/flavours";
     ".config/neofetch".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/neofetch";

@@ -8,6 +8,7 @@
     wtype # wayland typing indicator
     btop # better htop
     flavours # color scheme switcher
+    dooit # cli todo list
     swww
     zathura
     qbittorrent
