@@ -34,7 +34,7 @@ in
     ".config/scripts".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/scripts";
     ".config/yazi/yazi.toml".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/yazi.toml";
     ".config/flavours".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/flavours";
-    ".config/neofetch".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/neofetch";
+    # ".config/neofetch".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/neofetch";
   };
 
   home.sessionVariables = {

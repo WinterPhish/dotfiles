@@ -1,6 +1,6 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-unstable, ... }:
 {
-  home.packages = with pkgs; [
+  home.packages = (with pkgs; [
     discord
     stremio
     rofimoji # emoji picker
@@ -14,5 +14,12 @@
     qbittorrent
     pywal
     dolphin # file manager
-  ];
+  ])
+  ++
+  (with pkgs-unstable; [
+    nh
+    nix-output-monitor
+    nvd
+    ags
+  ]);
 }

@@ -13,6 +13,10 @@
       # ./virt.nix
       inputs.xremap-flake.nixosModules.default
     ];
+  
+  environment.sessionVariables = {
+    FLAKE = "/home/mmed/dotfiles";
+  };
 
   #* xremap configuration
   services.xremap.withHypr = true;

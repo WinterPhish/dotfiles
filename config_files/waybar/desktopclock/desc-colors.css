@@ -1,23 +1,23 @@
 /*
 *
-* Base16 Nord
-* Author: arcticicestudio
+* Base16 Tokyo Night Terminal Dark
+* Author: Michaël Ball
 *
 */
 
-@define-color bg01 #2e3440;
-@define-color surface1 #3b4252;
-@define-color surface2 #434c5e;
-@define-color bg02 #4c566a;
-@define-color surface3 #d8dee9;
-@define-color text #e5e9f0;
-@define-color surface4 #eceff4;
-@define-color white #8fbcbb;
-@define-color red #bf616a;
-@define-color accent1 #d08770;
-@define-color yellow #ebcb8b;
-@define-color green #a3be8c;
-@define-color cyan #88c0d0;
-@define-color blue #81a1c1;
-@define-color magneta #b48ead;
-@define-color accent2 #5e81ac;
+@define-color bg01 #16161e;
+@define-color surface1 #1a1b26;
+@define-color surface2 #2f3549;
+@define-color bg02 #444b6a;
+@define-color surface3 #787c99;
+@define-color text #787c99;
+@define-color surface4 #cbccd1;
+@define-color white #d5d6db;
+@define-color red #f7768e;
+@define-color accent1 #034ea9;
+@define-color yellow #e0af68;
+@define-color green #41a6b5;
+@define-color cyan #7dcfff;
+@define-color blue #7aa2f7;
+@define-color magneta #bb9af7;
+@define-color accent2 #52c0ef;

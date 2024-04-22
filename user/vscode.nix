@@ -7,6 +7,5 @@
   ++ 
   (with pkgs-unstable; [
     vscode
-    ags
   ]);
 }
