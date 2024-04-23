@@ -1,0 +1,35 @@
+# Base16 Catppuccin Macchiato
+# Author: https://github.com/catppuccin/catppuccin
+
+set default-bg                  "#24273a"
+set default-fg                  "#1e2030"
+
+set statusbar-fg                "#5b6078"
+set statusbar-bg                "#363a4f"
+
+set inputbar-bg                 "#24273a"
+set inputbar-fg                 "#b7bdf8"
+
+set notification-bg             "#24273a"
+set notification-fg             "#b7bdf8"
+
+set notification-error-bg       "#24273a"
+set notification-error-fg       "#ed8796"
+
+set notification-warning-bg     "#24273a"
+set notification-warning-fg     "#ed8796"
+
+set highlight-color             "#eed49f"
+set highlight-active-color      "#8aadf4"
+
+set completion-bg               "#1e2030"
+set completion-fg               "#8aadf4"
+
+set completion-highlight-fg     "#b7bdf8"
+set completion-highlight-bg     "#8aadf4"
+
+set recolor-lightcolor          "#24273a"
+set recolor-darkcolor           "#f4dbd6"
+
+set recolor                     "false"
+set recolor-keephue             "false"

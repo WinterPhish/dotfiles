@@ -98,7 +98,7 @@ button:hover {
   margin-right: 10px;
   padding: 6px 15px;
   border-radius: 90px;
-  background: @accent1;
+  background: @cyan;
 }
 
 #network {
@@ -107,7 +107,7 @@ button:hover {
   margin-right: 10px;
   padding: 6px 15px;
   border-radius: 90px;
-  background: @accent2;
+  background: @white;
 }
 
 #tray {

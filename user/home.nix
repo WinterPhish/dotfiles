@@ -31,10 +31,12 @@ in
     ".config/hypr".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/hypr";
     ".config/starship.toml".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/starship.toml";
     ".config/waybar".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/waybar";
+    ".config/zathura".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/zathura";
     ".config/scripts".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/scripts";
     ".config/yazi/yazi.toml".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/yazi.toml";
     ".config/flavours".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/flavours";
-    # ".config/neofetch".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/neofetch";
+    ".config/cava".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/cava";
+    ".config/neofetch".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/neofetch";
   };
 
   home.sessionVariables = {

@@ -1,15 +1,25 @@
-{ pkgs, ... }: {
-  home.sessionVariables = { GTK_THEME = "Nordic"; };
+{ pkgs, config, ... }: {
+  home.sessionVariables = { GTK_THEME = "Catppuccin-Macchiato-Compact-Pink-Dark"; };
   home.pointerCursor = {
     name = "Catppuccin-Mocha-Dark-Cursors";
     package = pkgs.catppuccin-cursors.mochaDark;
     size = 16;
   };
+  xdg.configFile = {
+    "gtk-4.0/assets".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/assets";
+    "gtk-4.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk.css";
+    "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
+  };
   gtk = {
     enable = true;
     theme = {
-      name = "Nordic";
-      package = pkgs.nordic;
+      name = "Catppuccin-Macchiato-Compact-Pink-Dark";
+      package = pkgs.catppuccin-gtk.override {
+        accents = [ "pink" ];
+        size = "compact";
+        tweaks = [ "rimless" "black" ];
+        variant = "macchiato";
+      };
     };
     cursorTheme = {
       name = "Catppuccin-Mocha-Dark-Cursors";

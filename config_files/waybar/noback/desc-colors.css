@@ -1,23 +1,23 @@
 /*
 *
-* Base16 Tokyo Night Terminal Dark
-* Author: Michaël Ball
+* Base16 Catppuccin Macchiato
+* Author: https://github.com/catppuccin/catppuccin
 *
 */
 
-@define-color bg01 #16161e;
-@define-color surface1 #1a1b26;
-@define-color surface2 #2f3549;
-@define-color bg02 #444b6a;
-@define-color surface3 #787c99;
-@define-color text #787c99;
-@define-color surface4 #cbccd1;
-@define-color white #d5d6db;
-@define-color red #f7768e;
-@define-color accent1 #034ea9;
-@define-color yellow #e0af68;
-@define-color green #41a6b5;
-@define-color cyan #7dcfff;
-@define-color blue #7aa2f7;
-@define-color magneta #bb9af7;
-@define-color accent2 #52c0ef;
+@define-color bg01 #24273a;
+@define-color surface1 #1e2030;
+@define-color surface2 #363a4f;
+@define-color bg02 #494d64;
+@define-color surface3 #5b6078;
+@define-color text #cad3f5;
+@define-color surface4 #f4dbd6;
+@define-color white #b7bdf8;
+@define-color red #ed8796;
+@define-color accent1 #f5a97f;
+@define-color yellow #eed49f;
+@define-color green #a6da95;
+@define-color cyan #8bd5ca;
+@define-color blue #8aadf4;
+@define-color magneta #c6a0f6;
+@define-color accent2 #f0c6c6;
