@@ -11,7 +11,6 @@
     dooit # cli todo list
     swww
     zathura
-    qbittorrent
     pywal
     dolphin # file manager
   ])

@@ -41,3 +41,7 @@ echo "
 ▓▓  ▓▓  ▓▓ ▓▓  ▓▓  ▓▓ ▓▓      ▓▓   ▓▓ 
 ██      ██ ██      ██ ███████ ██████  
 "
+if [ -f "shell.nix" ] && [ -z "$IN_NIX_SHELL" ]; then
+    clear;
+    nix-shell --command zsh;
+fi
