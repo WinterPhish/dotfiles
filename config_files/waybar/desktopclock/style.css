@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-  color: @magneta;
+  color: @bg01;
   background: 00;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -22,5 +22,5 @@ window#waybar.empty {
     margin-left: 100px;
     font-weight: 300;
     font-size: 48pt;
-    color: @magneta;
+    color: @bg01;
 }

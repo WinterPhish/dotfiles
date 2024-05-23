@@ -1,32 +1,32 @@
-# Base16 Catppuccin Macchiato
-# Author: https://github.com/catppuccin/catppuccin
+# Base16 Horizon Dark
+# Author: Michaël Ball (http://github.com/michael-ball/)
 
-set default-bg                  "#24273a"
-set default-fg                  "#1e2030"
+set default-bg                  "#1c1e26"
+set default-fg                  "#232530"
 
-set statusbar-fg                "#5b6078"
-set statusbar-bg                "#363a4f"
+set statusbar-fg                "#9da0a2"
+set statusbar-bg                "#2e303e"
 
-set inputbar-bg                 "#24273a"
-set inputbar-fg                 "#b7bdf8"
+set inputbar-bg                 "#1c1e26"
+set inputbar-fg                 "#e3e6ee"
 
-set notification-bg             "#24273a"
-set notification-fg             "#b7bdf8"
+set notification-bg             "#1c1e26"
+set notification-fg             "#e3e6ee"
 
-set notification-error-bg       "#24273a"
-set notification-error-fg       "#ed8796"
+set notification-error-bg       "#1c1e26"
+set notification-error-fg       "#e93c58"
 
-set notification-warning-bg     "#24273a"
-set notification-warning-fg     "#ed8796"
+set notification-warning-bg     "#1c1e26"
+set notification-warning-fg     "#e93c58"
 
-set highlight-color             "#eed49f"
-set highlight-active-color      "#8aadf4"
+set highlight-color             "#efb993"
+set highlight-active-color      "#df5273"
 
-set completion-bg               "#1e2030"
-set completion-fg               "#8aadf4"
+set completion-bg               "#232530"
+set completion-fg               "#df5273"
 
-set completion-highlight-fg     "#b7bdf8"
-set completion-highlight-bg     "#8aadf4"
+set completion-highlight-fg     "#e3e6ee"
+set completion-highlight-bg     "#df5273"
 
-set recolor-lightcolor          "#24273a"
-set recolor-darkcolor           "#f4dbd6"
+set recolor-lightcolor          "#1c1e26"
+set recolor-darkcolor           "#dcdfe4"

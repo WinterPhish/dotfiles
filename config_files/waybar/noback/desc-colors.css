@@ -1,23 +1,23 @@
 /*
 *
-* Base16 Catppuccin Macchiato
-* Author: https://github.com/catppuccin/catppuccin
+* Base16 Horizon Dark
+* Author: Michaël Ball (http://github.com/michael-ball/)
 *
 */
 
-@define-color bg01 #24273a;
-@define-color surface1 #1e2030;
-@define-color surface2 #363a4f;
-@define-color bg02 #494d64;
-@define-color surface3 #5b6078;
-@define-color text #cad3f5;
-@define-color surface4 #f4dbd6;
-@define-color white #b7bdf8;
-@define-color red #ed8796;
-@define-color accent1 #f5a97f;
-@define-color yellow #eed49f;
-@define-color green #a6da95;
-@define-color cyan #8bd5ca;
-@define-color blue #8aadf4;
-@define-color magneta #c6a0f6;
-@define-color accent2 #f0c6c6;
+@define-color bg01 #1c1e26;
+@define-color surface1 #232530;
+@define-color surface2 #2e303e;
+@define-color bg02 #6f6f70;
+@define-color surface3 #9da0a2;
+@define-color text #cbced0;
+@define-color surface4 #dcdfe4;
+@define-color white #e3e6ee;
+@define-color red #e93c58;
+@define-color accent1 #e58d7d;
+@define-color yellow #efb993;
+@define-color green #efaf8e;
+@define-color cyan #24a8b4;
+@define-color blue #df5273;
+@define-color magneta #b072d1;
+@define-color accent2 #e4a382;

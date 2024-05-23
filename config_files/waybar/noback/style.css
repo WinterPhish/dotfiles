@@ -59,7 +59,7 @@ button:hover {
 }
 
 #workspaces button {
-  color: @text;
+  color: @blue;
     font-weight: 600;
         margin: 0px;
         padding: 0px 5px;
@@ -73,7 +73,7 @@ button:hover {
 }
 
 #workspaces button.active {
-  color: @blue;
+  color: @text;
 }
 
 #workspaces button.focused {
@@ -98,7 +98,7 @@ button:hover {
   margin-right: 10px;
   padding: 6px 15px;
   border-radius: 90px;
-  background: @cyan;
+  background: @accent1;
 }
 
 #network {
@@ -107,7 +107,7 @@ button:hover {
   margin-right: 10px;
   padding: 6px 15px;
   border-radius: 90px;
-  background: @white;
+  background: @accent2;
 }
 
 #tray {
