@@ -1,4 +1,5 @@
 qbittorrent &
 discord &
-sleep 3 ;
-hyprctl dispatch workspace 1 &
+sleep 4 ;
+hyprctl dispatch workspace 1 ;
+music-space &

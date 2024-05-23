@@ -45,7 +45,7 @@ if [ -f "shell.nix" ] && [ -z "$IN_NIX_SHELL" ]; then
     clear;
     nix-shell --command zsh;
 fi
-if [ -f "flake.nix" ] && [ -z "$IN_NIX_SHELL" ]; then
+if [ -f "flake.nix" ] && [ -z "$IN_NIX_SHELL" ] && [ "$(basename "$(pwd)")" != "dotfiles" ]; then
     clear;
     nix develop --command zsh;
 fi

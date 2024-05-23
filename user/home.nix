@@ -23,6 +23,8 @@ in
     ./xdg.nix
     ./gtk.nix
     ./games.nix
+    ./PS.nix
+    ./nvim.nix
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -38,6 +40,7 @@ in
     ".config/flavours".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/flavours";
     ".config/cava".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/cava";
     ".config/neofetch".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/neofetch";
+    ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/nvim";
   };
 
   home.sessionVariables = {

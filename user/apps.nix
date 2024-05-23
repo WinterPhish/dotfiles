@@ -11,6 +11,7 @@
     dooit # cli todo list
     swww
     zathura
+    tree
     pywal
     dolphin # file manager
   ])
