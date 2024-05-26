@@ -10,6 +10,7 @@
     flavours # color scheme switcher
     dooit # cli todo list
     swww
+    mpvpaper
     zathura
     tree
     pywal

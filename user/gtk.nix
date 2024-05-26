@@ -30,7 +30,7 @@
       package = pkgs.papirus-icon-theme;
     };
     font = {
-      name = "JetBrainsMono Nerd Font";
+      name = "FiraCode Nerd Font";
       size = 11;
     };
     gtk3.extraConfig = {

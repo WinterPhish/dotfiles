@@ -9,7 +9,9 @@ let
     ll = "eza -lha --icons=auto --sort=name --group-directories-first"; # long list all
     ld = "eza -lhD --icons=auto"; # long list dirs
     zathura = "zathura --fork"; # fork zathura
-    start = "nix-shell --command zsh";
+    nix-shell = "nix-shell --command zsh";
+    vim = "nvim";
+    vi = "nvim";
   };
 in
 {

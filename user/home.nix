@@ -41,6 +41,7 @@ in
     ".config/cava".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/cava";
     ".config/neofetch".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/neofetch";
     ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/nvim";
+    ".config/functions.sh".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/functions.sh";
   };
 
   home.sessionVariables = {

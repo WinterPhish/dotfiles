@@ -13,8 +13,11 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- copy paste to global clipboard
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", '"+y')
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
-vim.keymap.set({"n", "v"}, "<leader>p", [["+p]])
+vim.keymap.set({ "n", "v" }, "<leader>p", '"+p')
 vim.keymap.set("n", "<leader>P", [["+P]])
+
+-- window navigation keybindings
+vim.keymap.set({ "n", "v" }, "<leader>n", "<C-w>")

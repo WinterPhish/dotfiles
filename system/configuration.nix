@@ -72,6 +72,7 @@
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
   programs.zsh.autosuggestions.enable = true;
+  programs.npm.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -107,9 +108,6 @@
     #* file manager
     yazi
 
-    #* fonts
-    font-awesome
-
     #* bluetooth
     bluez-tools
     blueberry
@@ -120,9 +118,9 @@
   ];
 
   fonts.packages = with pkgs; [
-    font-awesome
-    nerdfonts
-    meslo-lgs-nf
+    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+    fira-code
+    noto-fonts-emoji
   ];
 
   # # enable auto-updates

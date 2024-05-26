@@ -41,3 +41,8 @@ template = "hyprland"
 file = "~/.config/nvim/lua/mmed/colors.lua"
 template = "nvim"
 rewrite = true
+
+[[item]]
+file = "~/.config/cava/config"
+template = "cava"
+rewrite = true

@@ -1,0 +1,17 @@
+source ~/.config/functions.sh;
+
+echo "
+░░░    ░░░ ░░░    ░░░ ░░░░░░░ ░░░░░░  
+▒▒▒▒  ▒▒▒▒ ▒▒▒▒  ▒▒▒▒ ▒▒      ▒▒   ▒▒ 
+▒▒ ▒▒▒▒ ▒▒ ▒▒ ▒▒▒▒ ▒▒ ▒▒▒▒▒   ▒▒   ▒▒ 
+▓▓  ▓▓  ▓▓ ▓▓  ▓▓  ▓▓ ▓▓      ▓▓   ▓▓ 
+██      ██ ██      ██ ███████ ██████  
+"
+if [ -f "shell.nix" ] && [ -z "$IN_NIX_SHELL" ]; then
+    clear;
+    nix-shell;
+fi
+if [ -f "flake.nix" ] && [ -z "$IN_NIX_SHELL" ] && [ "$(basename "$(pwd)")" != "dotfiles" ]; then
+    clear;
+    nix develop --command zsh;
+fi
