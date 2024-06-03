@@ -1,32 +1,32 @@
-# Base16 Horizon Dark
-# Author: Michaël Ball (http://github.com/michael-ball/)
+# Base16 Outrun Dark
+# Author: Hugo Delahousse (http://github.com/hugodelahousse/)
 
-set default-bg                  "#1c1e26"
-set default-fg                  "#232530"
+set default-bg                  "#00002a"
+set default-fg                  "#20204a"
 
-set statusbar-fg                "#9da0a2"
-set statusbar-bg                "#2e303e"
+set statusbar-fg                "#b0b0da"
+set statusbar-bg                "#30305a"
 
-set inputbar-bg                 "#1c1e26"
-set inputbar-fg                 "#e3e6ee"
+set inputbar-bg                 "#00002a"
+set inputbar-fg                 "#f5f5ff"
 
-set notification-bg             "#1c1e26"
-set notification-fg             "#e3e6ee"
+set notification-bg             "#00002a"
+set notification-fg             "#f5f5ff"
 
-set notification-error-bg       "#1c1e26"
-set notification-error-fg       "#e93c58"
+set notification-error-bg       "#00002a"
+set notification-error-fg       "#ff4242"
 
-set notification-warning-bg     "#1c1e26"
-set notification-warning-fg     "#e93c58"
+set notification-warning-bg     "#00002a"
+set notification-warning-fg     "#ff4242"
 
-set highlight-color             "#efb993"
-set highlight-active-color      "#df5273"
+set highlight-color             "#f3e877"
+set highlight-active-color      "#66b0ff"
 
-set completion-bg               "#232530"
-set completion-fg               "#df5273"
+set completion-bg               "#20204a"
+set completion-fg               "#66b0ff"
 
-set completion-highlight-fg     "#e3e6ee"
-set completion-highlight-bg     "#df5273"
+set completion-highlight-fg     "#f5f5ff"
+set completion-highlight-bg     "#66b0ff"
 
-set recolor-lightcolor          "#1c1e26"
-set recolor-darkcolor           "#dcdfe4"
+set recolor-lightcolor          "#00002a"
+set recolor-darkcolor           "#e0e0ff"

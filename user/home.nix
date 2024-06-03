@@ -6,7 +6,7 @@ in
   home.username = UserSettings.username;
   home.homeDirectory = UserSettings.homeDir;
 
-  home.stateVersion = "23.11";
+  home.stateVersion = "24.05";
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

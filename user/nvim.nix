@@ -4,18 +4,16 @@
     # telescope
     ripgrep
     # lsp
-    rust-analyzer
     lua-language-server
     libclang
     # builders
+    rustup
     gnumake
     gcc
     wget
     python3
-    cargo
     # formatters
     stylua
-    rustfmt
   ])
   ++ 
   (with pkgs-unstable; [
