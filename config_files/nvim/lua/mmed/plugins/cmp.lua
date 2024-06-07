@@ -1,6 +1,23 @@
 return {
 	{
 		"hrsh7th/cmp-nvim-lsp",
+		-- Database
+		"kristijanhusak/vim-dadbod-ui",
+		"kristijanhusak/vim-dadbod-completion",
+		{
+			"tpope/vim-dadbod",
+			opt = true,
+			requires = {
+				"kristijanhusak/vim-dadbod-ui",
+				"kristijanhusak/vim-dadbod-completion",
+			},
+			config = function()
+				require("config.dadbod").setup()
+			end,
+		},
+	},
+	{
+		"github/copilot.vim",
 	},
 	{
 		"hrsh7th/nvim-cmp",
@@ -44,10 +61,7 @@ return {
 					["<C-u>"] = cmp.mapping.scroll_docs(-4),
 					["<C-d>"] = cmp.mapping.scroll_docs(4),
 					["<C-i>"] = cmp.mapping.complete(), -- show completion suggestions
-					["<C-y>"] = function()
-						cmp.mapping.abort()
-						vim.api.nvim_command("<Esc>")
-					end,
+					["<C-y>"] = cmp.mapping.close(),
 					["<Tab>"] = cmp.mapping.confirm({ select = true }),
 				}),
 				-- sources for autocompletion

@@ -9,6 +9,7 @@ return {
 				}),
 				null_ls.builtins.formatting.prettier,
 				null_ls.builtins.formatting.shfmt,
+				null_ls.builtins.formatting.sqlfmt,
         null_ls.builtins.diagnostics.zsh
 			},
 		})

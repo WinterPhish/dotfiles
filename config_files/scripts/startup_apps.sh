@@ -1,3 +1,4 @@
+toggle-monitor ;
 qbittorrent &
 discord &
 sleep 4 ;

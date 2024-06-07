@@ -19,11 +19,9 @@ in
     ./music.nix
     ./vanity.nix
     ./vscode.nix
-    ./temp/PFE.nix
     ./xdg.nix
     ./gtk.nix
     ./games.nix
-    ./PS.nix
     ./nvim.nix
   ];
 

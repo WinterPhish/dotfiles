@@ -13,8 +13,6 @@
     mpvpaper
     zathura
     tree
-    pywal
-    dolphin # file manager
   ])
   ++
   (with pkgs-unstable; [

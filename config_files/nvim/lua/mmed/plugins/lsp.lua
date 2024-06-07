@@ -36,10 +36,6 @@ return {
 				root_dir = util.root_pattern("Cargo.toml"),
 			})
 
-			lspconfig.clangd.setup({
-				capabilities = capabilities,
-			})
-
 			vim.keymap.set("n", "K", require("pretty_hover").hover, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})

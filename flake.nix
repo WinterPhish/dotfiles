@@ -28,8 +28,8 @@
         wm = "hyprland";
         browser = "firefox";
         terminal = "kitty";
-        tty_editor = "vim";
-        editor = "code --disable-gpu";
+        tty_editor = "nvim";
+        editor = "nvim";
       };
       lib = nixpkgs.lib;
       system = SystemSettings.system;
