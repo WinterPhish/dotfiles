@@ -1,13 +1,15 @@
 { pkgs, pkgs-unstable, ... }:
 {
   home.packages = (with pkgs; [
+    # theming
+    neovim-remote
     # telescope
     ripgrep
     # markdown
     litemdview
     # lsp
     lua-language-server
-    libclang
+    nixpkgs-fmt
     # builders
     rustup
     openssl
@@ -20,6 +22,8 @@
     python3
     # formatters
     stylua
+    shellcheck
+    shfmt
   ])
   ++ 
   (with pkgs-unstable; [

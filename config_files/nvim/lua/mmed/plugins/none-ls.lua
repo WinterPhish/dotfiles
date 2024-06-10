@@ -8,9 +8,8 @@ return {
 					command = "/home/mmed/.nix-profile/bin/stylua",
 				}),
 				null_ls.builtins.formatting.prettier,
-				null_ls.builtins.formatting.shfmt,
 				null_ls.builtins.formatting.sqlfmt,
-        null_ls.builtins.diagnostics.zsh
+        null_ls.builtins.formatting.shfmt.with({ filetypes = { "sh", "zsh" } }),
 			},
 		})
 		vim.keymap.set("n", "<leader>s", vim.lsp.buf.format, {})

@@ -1,32 +1,32 @@
-# Base16 Outrun Dark
-# Author: Hugo Delahousse (http://github.com/hugodelahousse/)
+# Base16 Generated
+# Author: Flavours
 
-set default-bg                  "#00002a"
-set default-fg                  "#20204a"
+set default-bg                  "#182837"
+set default-fg                  "#344551"
 
-set statusbar-fg                "#b0b0da"
-set statusbar-bg                "#30305a"
+set statusbar-fg                "#859b9e"
+set statusbar-bg                "#4f616a"
 
-set inputbar-bg                 "#00002a"
-set inputbar-fg                 "#f5f5ff"
+set inputbar-bg                 "#182837"
+set inputbar-fg                 "#bdcdcd"
 
-set notification-bg             "#00002a"
-set notification-fg             "#f5f5ff"
+set notification-bg             "#182837"
+set notification-fg             "#bdcdcd"
 
-set notification-error-bg       "#00002a"
-set notification-error-fg       "#ff4242"
+set notification-error-bg       "#182837"
+set notification-error-fg       "#536af7"
 
-set notification-warning-bg     "#00002a"
-set notification-warning-fg     "#ff4242"
+set notification-warning-bg     "#182837"
+set notification-warning-fg     "#536af7"
 
-set highlight-color             "#f3e877"
-set highlight-active-color      "#66b0ff"
+set highlight-color             "#467daa"
+set highlight-active-color      "#5b7c94"
 
-set completion-bg               "#20204a"
-set completion-fg               "#66b0ff"
+set completion-bg               "#344551"
+set completion-fg               "#5b7c94"
 
-set completion-highlight-fg     "#f5f5ff"
-set completion-highlight-bg     "#66b0ff"
+set completion-highlight-fg     "#bdcdcd"
+set completion-highlight-bg     "#5b7c94"
 
-set recolor-lightcolor          "#00002a"
-set recolor-darkcolor           "#e0e0ff"
+set recolor-lightcolor          "#182837"
+set recolor-darkcolor           "#afc2c3"

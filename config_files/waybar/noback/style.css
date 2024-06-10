@@ -59,7 +59,7 @@ button:hover {
 }
 
 #workspaces button {
-  color: @blue;
+  color: @accent2;
     font-weight: 600;
         margin: 0px;
         padding: 0px 5px;
@@ -84,7 +84,7 @@ button:hover {
 #temperature,
 #memory,
 #disk {
-  color: @blue;
+  color: @accent2;
   font-weight: 600;
   margin-right: 10px;
   padding: 6px 15px;
@@ -107,7 +107,7 @@ button:hover {
   margin-right: 10px;
   padding: 6px 15px;
   border-radius: 90px;
-  background: @accent2;
+  background: @blue;
 }
 
 #tray {
@@ -119,7 +119,7 @@ button:hover {
 }
 
 #clock {
-  color: @blue;
+  color: @accent2;
   font-weight: 600;
   margin-right: 10px;
   padding: 6px 15px;

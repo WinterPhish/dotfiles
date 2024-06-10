@@ -22,18 +22,6 @@ template = "mmed"
 rewrite = true
 
 [[item]]
-file = "~/.config/test/build_schemes.json"
-template = "pywal"
-rewrite = true
-hook = "wal --theme ~/.config/test/build_schemes.json -ste"
-
-[[item]]
-file = "~/.vscode/extensions/dracula-theme.theme-dracula-2.24.3/theme/dracula.json"
-template = "vscode"
-subtemplate = "base16"
-rewrite = true
-
-[[item]]
 file = "~/.config/hypr/hyprland.conf"
 template = "hyprland"
 
@@ -46,3 +34,9 @@ rewrite = true
 file = "~/.config/cava/config"
 template = "cava"
 rewrite = true
+
+[[item]]
+file = "~/.Xresources"
+template = "Xresources"
+rewrite = true
+hook = "xrdb -load ~/.Xresources;wall-theme"

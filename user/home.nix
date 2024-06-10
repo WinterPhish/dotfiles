@@ -17,6 +17,7 @@ in
     ./music.nix
     ./hyprland.nix
     ./music.nix
+    ./theming.nix
     ./vanity.nix
     ./vscode.nix
     ./xdg.nix
