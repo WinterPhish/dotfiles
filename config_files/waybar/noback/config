@@ -7,7 +7,7 @@
     "spacing": 1,
     "margin-bottom": -15,
 
-    "modules-left": ["custom/power", "hyprland/workspaces"],
+    "modules-left": ["custom/power",  "hyprland/workspaces", "custom/tomato"],
     "modules-center": ["clock"],
     "modules-right": ["cpu", "temperature", "memory", "disk", "pulseaudio", "network", "tray"],
 
@@ -89,6 +89,11 @@
       "format-icons": "Mmed",
       "exec-on-event": "true",
       "on-click": "poweroff"
+    },
+    "custom/tomato": {
+      "interval": 1,
+      "format": {},
+      "exec": "tomato -t"
     },
     "custom/sepp": {
         "format": "|"

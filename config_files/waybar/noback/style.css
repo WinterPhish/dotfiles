@@ -79,7 +79,7 @@ button:hover {
 #workspaces button.focused {
   color: @green;
 }
-
+#custom-tomato,
 #cpu,
 #temperature,
 #memory,

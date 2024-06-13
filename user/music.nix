@@ -8,8 +8,8 @@
     cmatrix
     syncthing
     (pkgs.writeShellScriptBin "music-space" ''
+      hyprctl dispatch workspace 1 ;
       spotify &
-      sleep 1;
       hyprctl dispatch workspace 1 ;
       kitty cava &
       kitty cmatrix &

@@ -1,23 +1,23 @@
 /*
 *
-* Base16 Generated
-* Author: Flavours
+* Base16 Outrun Dark
+* Author: Hugo Delahousse (http://github.com/hugodelahousse/)
 *
 */
 
-@define-color bg01 #182837;
-@define-color surface1 #344551;
-@define-color surface2 #4f616a;
-@define-color bg02 #6a7e84;
-@define-color surface3 #859b9e;
-@define-color text #a1b7b8;
-@define-color surface4 #afc2c3;
-@define-color white #bdcdcd;
-@define-color red #536af7;
-@define-color accent1 #d56034;
-@define-color yellow #467daa;
-@define-color green #df3553;
-@define-color cyan #277cc5;
-@define-color blue #5b7c94;
-@define-color magneta #7f7390;
-@define-color accent2 #7a777b;
+@define-color bg01 #00002a;
+@define-color surface1 #20204a;
+@define-color surface2 #30305a;
+@define-color bg02 #50507a;
+@define-color surface3 #b0b0da;
+@define-color text #d0d0fa;
+@define-color surface4 #e0e0ff;
+@define-color white #f5f5ff;
+@define-color red #ff4242;
+@define-color accent1 #fc8d28;
+@define-color yellow #f3e877;
+@define-color green #59f176;
+@define-color cyan #0ef0f0;
+@define-color blue #66b0ff;
+@define-color magneta #f10596;
+@define-color accent2 #f003ef;

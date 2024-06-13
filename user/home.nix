@@ -13,6 +13,7 @@ in
 
   imports = [
     ./CLI/default.nix
+    ./management.nix
     ./apps.nix
     ./music.nix
     ./hyprland.nix

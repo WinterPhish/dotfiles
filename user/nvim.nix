@@ -1,8 +1,6 @@
 { pkgs, pkgs-unstable, ... }:
 {
   home.packages = (with pkgs; [
-    # theming
-    neovim-remote
     # telescope
     ripgrep
     # markdown
@@ -24,8 +22,12 @@
     stylua
     shellcheck
     shfmt
+    (pkgs.writeShellScriptBin "color-nvim" ''
+      ls $XDG_RUNTIME_DIR/nvim.*.0 \
+     	| xargs -I {} nvim --server {} --remote-send "<Esc>:source ~/.config/nvim/lua/mmed/colors.lua<CR>"
+    '')
   ])
-  ++ 
+  ++
   (with pkgs-unstable; [
     neovim
   ]);
