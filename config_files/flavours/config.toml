@@ -48,4 +48,4 @@ hook = "pkill -USR2 cava"
 file = "~/.Xresources"
 template = "Xresources"
 rewrite = true
-hook = "xrdb -load ~/.Xresources;wall-theme"
+hook = "xrdb -load ~/.Xresources"

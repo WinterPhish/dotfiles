@@ -1,7 +1,6 @@
 { pkgs, pkgs-unstable, ... }:
 {
   home.packages = (with pkgs; [
-    discord
     stremio
     rofimoji # emoji picker
     dolphin # gui file manager
@@ -18,6 +17,7 @@
   (with pkgs-unstable; [
     nh
     nix-output-monitor
+    discord
     nvd
     ags
   ]);
