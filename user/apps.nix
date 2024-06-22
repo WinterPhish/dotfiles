@@ -9,6 +9,7 @@
     flavours # color scheme switcher
     dooit # cli todo list
     swww
+    unclutter
     mpvpaper
     zathura
     tree
@@ -17,7 +18,6 @@
   (with pkgs-unstable; [
     nh
     nix-output-monitor
-    discord
     nvd
     ags
   ]);

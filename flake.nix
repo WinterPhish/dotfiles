@@ -7,9 +7,10 @@
     home-manager.url = "github:nix-community/home-manager/release-24.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     xremap-flake.url = "github:xremap/nix-flake";
+    spicetify-nix.url = "github:the-argus/spicetify-nix";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, spicetify-nix, ... }@inputs:
     let
       SystemSettings = {
         system = "x86_64-linux";
@@ -17,7 +18,7 @@
         timezone = "Africa/Tunis";
         locale = "en_US.UTF-8";
       };
-      UserSettings = rec {
+      UserSettings = {
         username = "mmed";
         email = "mmed.benhadjnasr@gmail.com";
         homeDir = "/home/" + UserSettings.username;
@@ -56,9 +57,11 @@
         extraSpecialArgs = {
           inherit UserSettings;
           inherit pkgs-unstable;
+          inherit spicetify-nix;
         };
         modules = [
           ./user/home.nix
+          ./user/spicetify.nix
         ];
       };
     };

@@ -15,7 +15,6 @@ in
     ./CLI/default.nix
     ./management.nix
     ./apps.nix
-    ./music.nix
     ./hyprland.nix
     ./music.nix
     ./theming.nix
@@ -25,6 +24,7 @@ in
     ./gtk.nix
     ./games.nix
     ./nvim.nix
+    ./discord.nix
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

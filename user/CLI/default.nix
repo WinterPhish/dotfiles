@@ -45,4 +45,8 @@ in
     enableZshIntegration = true;
     options = [ "--cmd cd" ];
   };
+
+  programs.direnv = {
+    enable = true;
+  };
 }

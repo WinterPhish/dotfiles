@@ -1,18 +1,13 @@
 { pkgs, pkgs-unstable, ... }:
 {
   home.packages = (with pkgs; [
+    direnv
     # telescope
     ripgrep
-    # markdown
-    litemdview
     # lsp
     lua-language-server
     nixpkgs-fmt
     # builders
-    rustup
-    openssl
-    openssl.dev
-    pkg-config
     gnumake
     nodejs_22
     gcc

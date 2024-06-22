@@ -49,3 +49,8 @@ file = "~/.Xresources"
 template = "Xresources"
 rewrite = true
 hook = "xrdb -load ~/.Xresources"
+
+[[item]]
+file = "~/.config/BetterDiscord/themes/couve.theme.css"
+template = "betterdiscord"
+rewrite = true
