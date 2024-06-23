@@ -5,18 +5,18 @@
 | ![](./showcase/img1.png) | ![](./showcase/img2.png) | ![](./showcase/img3.png) |
 |--------------------------|--------------------------|--------------------------|
 | ![](./showcase/img4.png) | ![](./showcase/img5.png) | ![](./showcase/img6.png) |
-|--------------------------|--------------------------|--------------------------|
 | ![](./showcase/img7.png) | ![](./showcase/img8.png) | ![](./showcase/img9.png) |
 
 
 ## Installation
 
 do not install this i know it's nixos and it's supposed to be reproducible but I sacrificed that months ago and now I need magic to get it back.
+I do plan to fix in the future.
 
 ## Usage
 
 this repository can be helpfull to you with the config files and the scripts that I use to manage my system. I believe my dotfiles are modular enough so that you can find what you are looking for.
-In case you are rightfully confused by the structure of this repository, feel free to contact me and I will try to help you. feel free to use make an issue to ask for help or give a recommendation.
+In case you are confused by the structure of this repository, feel free to contact me and I will try my best to help you. feel free to use make an issue to ask for help or give a recommendation.
 
 ## structure
 
