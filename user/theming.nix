@@ -69,7 +69,7 @@
       if [[ ! $imgpath ]]; then
         exit 0
       fi
-      swww img --transition-type grow $imgpath
+      swww img --transition-type none $imgpath
       theme=$(jq -r --arg val "$imgpath" 'to_entries[] | select(.value == $val) | .key' ~/wallpapers/aux.json)
       if [[ $theme == "aux" ]]; then
         flavours generate dark $imgpath
@@ -95,7 +95,7 @@
       mv $current_wallpaper $target_wallpaper
       jq --arg key "$theme" --arg value "$target_wallpaper" '.[$key] = $value' ~/wallpapers/aux.json > ~/wallpapers/current.json
       cp ~/wallpapers/current.json ~/wallpapers/aux.json
-      swww img --transition-type grow $target_wallpaper
+      swww img --transition-type none $target_wallpaper
       if [[ $theme_exists == false ]]; then
         notify-send -i $current_wallpaper "Theme saved" "The theme $theme has been saved"
       else
@@ -116,7 +116,7 @@
       done
       jq --arg key "$theme" 'del(.[$key])' ~/wallpapers/aux.json > ~/wallpapers/current.json
       cp ~/wallpapers/current.json ~/wallpapers/aux.json
-      swww img --transition-type grow ~/wallpapers/aux/$current_wallpaper
+      swww img --transition-type none ~/wallpapers/aux/$current_wallpaper
     '')
   ]);
 }
