@@ -45,14 +45,20 @@ style = "bold green"
 [hostname]
 ssh_only = true
 format = "<[$hostname]($style)> "
-trim_at = "-"
+ssh_symbol = " "
 style = "bold dimmed purple"
 
 [shell]
 disabled = false
 
 [rust]
-format = "rust: [🦀 $version](red bold)"
+format = " [$version](red bold)"
+
+[lua]
+symbol = " "
+
+[zig]
+symbol = " "
 
 [elixir]
 symbol = " "
@@ -73,10 +79,10 @@ symbol = " "
 symbol = "λ "
 
 [nix_shell]
-symbol = " "
+symbol = " "
 
 [package]
-symbol = "📦"
+symbol = "󰏗 "
 
 [perl]
 symbol = " "
@@ -97,16 +103,19 @@ version_format = "v${raw}"
 symbol = " "
 
 [swift]
-symbol = "ﯣ "
+symbol = " "
 
 [nodejs]
-format = "via [ Node.js $version](bold green) "
+format = "  [$version](bold green) "
 detect_files = ["package.json", ".node-version"]
 detect_folders = ["node_modules"]
 
 [os]
 disabled = false
 format = "$symbol"
+
+[docker_context]
+symbol = " "
 
 [os.symbols]
 Alpaquita = " "

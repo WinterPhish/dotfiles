@@ -2,6 +2,7 @@ local opt = vim.opt
 
 opt.relativenumber = true
 opt.number = true
+opt.termguicolors = true
 
 -- turn off swapfile
 opt.swapfile = false
@@ -25,5 +26,3 @@ vim.opt.smartindent = true
 
 vim.opt.scrolloff = 8
 vim.opt.isfname:append("@-@")
-
-vim.cmd([[autocmd FileType * set formatoptions-=ro]])

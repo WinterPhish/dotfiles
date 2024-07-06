@@ -31,6 +31,10 @@ return {
 				capabilities = capabilities,
 			})
 
+			lspconfig.grammarly.setup({
+				capabilities = capabilities,
+			})
+
 			lspconfig.rust_analyzer.setup({
 				capabilities = capabilities,
 				root_dir = util.root_pattern("Cargo.toml"),

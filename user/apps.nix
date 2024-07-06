@@ -13,6 +13,7 @@
     mpvpaper
     zathura
     tree
+    docker
   ])
   ++
   (with pkgs-unstable; [
