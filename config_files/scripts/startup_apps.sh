@@ -1,6 +1,5 @@
-toggle-monitor ;
-qbittorrent &
-discord &
-sleep 4 ;
-hyprctl dispatch workspace 1 ;
-music-space &
+kitty &
+hyprctl dispatch workspace 2 &
+firefox &
+hyprctl dispatch workspace 3 &
+discord

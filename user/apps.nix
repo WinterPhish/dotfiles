@@ -14,12 +14,13 @@
     zathura
     tree
     docker
+    fuzzel
+    dunst
   ])
   ++
   (with pkgs-unstable; [
     nh
     nix-output-monitor
     nvd
-    ags
   ]);
 }

@@ -19,11 +19,10 @@ in
     ./music.nix
     ./theming.nix
     ./vanity.nix
-    ./vscode.nix
+    ./dev.nix
     ./xdg.nix
     ./gtk.nix
     ./games.nix
-    ./nvim.nix
     ./discord.nix
   ];
 
@@ -42,6 +41,7 @@ in
     ".config/neofetch".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/neofetch";
     ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/nvim";
     ".config/functions.sh".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/functions.sh";
+    ".config/fuzzel".source = config.lib.file.mkOutOfStoreSymlink "${static_files}/fuzzel";
   };
 
   home.sessionVariables = {

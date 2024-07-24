@@ -86,7 +86,7 @@
     },
     "custom/power": {
       "format": "{icon}",
-      "format-icons": "Mmed",
+      "format-icons": "Akira",
       "exec-on-event": "true",
       "on-click": "poweroff"
     },

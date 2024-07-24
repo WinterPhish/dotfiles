@@ -1,23 +1,23 @@
 /*
 *
-* Base16 UwUnicorn
-* Author: Fernando Marques (https://github.com/RakkiUwU) and Gabriel Fontes (https://github.com/Misterio77)
+* Base16 Nord
+* Author: arcticicestudio
 *
 */
 
-@define-color bg01 #241b26;
-@define-color surface1 #2f2a3f;
-@define-color surface2 #46354a;
-@define-color bg02 #6c3cb2;
-@define-color surface3 #7e5f83;
-@define-color text #eed5d9;
-@define-color surface4 #d9c2c6;
-@define-color white #e4ccd0;
-@define-color red #a84a73;
-@define-color accent1 #a008d1;
-@define-color yellow #877bb6;
-@define-color green #78a38f;
-@define-color cyan #9c5fce;
-@define-color blue #6a9eb5;
-@define-color magneta #c965bf;
-@define-color accent2 #d108bd;
+@define-color bg01 #2e3440;
+@define-color surface1 #3b4252;
+@define-color surface2 #434c5e;
+@define-color bg02 #4c566a;
+@define-color surface3 #d8dee9;
+@define-color text #e5e9f0;
+@define-color surface4 #eceff4;
+@define-color white #8fbcbb;
+@define-color red #bf616a;
+@define-color accent1 #d08770;
+@define-color yellow #ebcb8b;
+@define-color green #a3be8c;
+@define-color cyan #88c0d0;
+@define-color blue #81a1c1;
+@define-color magneta #b48ead;
+@define-color accent2 #5e81ac;

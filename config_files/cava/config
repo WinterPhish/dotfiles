@@ -1,13 +1,16 @@
 [color]
-background = '#241b26'
+background = '#2e3440'
 
 gradient = 1
 
-gradient_color_1 = '#d108bd'
-gradient_color_2 = '#d108bd'
-gradient_color_3 = '#d108bd'
-gradient_color_4 = '#d108bd'
-gradient_color_5 = '#d108bd'
-gradient_color_6 = '#d108bd'
-gradient_color_7 = '#d108bd'
-gradient_color_8 = '#d108bd'
+gradient_color_1 = '#5e81ac'
+gradient_color_2 = '#5e81ac'
+gradient_color_3 = '#5e81ac'
+gradient_color_4 = '#5e81ac'
+gradient_color_5 = '#5e81ac'
+gradient_color_6 = '#5e81ac'
+gradient_color_7 = '#5e81ac'
+gradient_color_8 = '#5e81ac'
+
+[input]
+method = pulse

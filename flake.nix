@@ -1,5 +1,5 @@
 {
-  description = "mmed configuration flake";
+  description = "home config flake";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-24.05";
@@ -8,19 +8,20 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     xremap-flake.url = "github:xremap/nix-flake";
     spicetify-nix.url = "github:the-argus/spicetify-nix";
+    anyrun.url = "github:Kirottu/anyrun";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, spicetify-nix, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, spicetify-nix, anyrun, ... }@inputs:
     let
       SystemSettings = {
         system = "x86_64-linux";
-        hostname = "mmedPC";
-        timezone = "Africa/Tunis";
+        hostname = "nixos";
+        timezone = "Canada/Toronto";
         locale = "en_US.UTF-8";
       };
       UserSettings = {
-        username = "mmed";
-        email = "mmed.benhadjnasr@gmail.com";
+        username = "akira";
+        email = "trimasitisu.battle@gmail.com";
         homeDir = "/home/" + UserSettings.username;
         dotfilesDir = UserSettings.homeDir + "/dotfiles";
         configDir = UserSettings.homeDir + "/.config";
@@ -41,7 +42,8 @@
       };
     in
     {
-      nixosConfigurations.mmedPC = lib.nixosSystem {
+      nixosConfigurations.nixos = lib.nixosSystem {
+        environment.systemPackages = [ anyrun.packages.${system}.anyrun ];
         specialArgs = {
           inherit inputs;
           inherit pkgs-unstable;
@@ -49,15 +51,16 @@
         };
         inherit system;
         modules = [
-          ./system/configuration.nix
+          /etc/nixos/configuration.nix
         ];
       };
-      homeConfigurations.mmed = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.akira = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = {
           inherit UserSettings;
           inherit pkgs-unstable;
           inherit spicetify-nix;
+          inherit anyrun;
         };
         modules = [
           ./user/home.nix

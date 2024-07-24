@@ -13,17 +13,17 @@ rewrite = true
 
 [[item]]
 file = "~/.config/waybar/desktopclock/desc-colors.css"
-template = "mmed"
+template = "akira"
 rewrite = true
 
 [[item]]
 file = "~/.config/waybar/noback/desc-colors.css"
-template = "mmed"
+template = "akira"
 rewrite = true
 
 [[item]]
 file = "~/.config/ags/desc-colors.css"
-template = "mmed"
+template = "akira"
 rewrite = true
 hook = "pkill ags;ags -c ~/.config/ags/config.js &"
 
@@ -31,12 +31,6 @@ hook = "pkill ags;ags -c ~/.config/ags/config.js &"
 file = "~/.config/hypr/hyprland.conf"
 template = "hyprland"
 hook = "sleep 1 ;toggle-monitor"
-
-[[item]]
-file = "~/.config/nvim/lua/mmed/colors.lua"
-template = "nvim"
-rewrite = true
-hook = "color-nvim"
 
 [[item]]
 file = "~/.config/cava/config"

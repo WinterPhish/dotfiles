@@ -12,6 +12,7 @@ let
     nix-shell = "nix-shell --command zsh";
     vim = "nvim";
     vi = "nvim";
+    nvim = "lvim";
   };
 in
 {
